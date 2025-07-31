@@ -275,3 +275,122 @@ object-fit: cover;
   font-weight: bold;
   margin-top: 3px;
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+  .header {
+    flex-wrap: wrap;
+    padding: 15px 5%;
+  }
+  .logo {
+    font-size: 20px;
+  }
+
+ .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid orangered;
+    color: white;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-1,
+  .btn-2,
+  .contact ,.btn{
+    margin-top: 10px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+  }
+
+  .home-container,
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5%;
+    gap: 2rem;
+  }
+
+  .home,
+  .about {
+    padding: 60px 5% 0;
+    height: auto;
+    text-align: center;
+  }
+
+  .home-content,
+  .about-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .img-box img,
+  .about-img img {
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+  }
+
+  .contact-form h2 {
+    font-size: 28px;
+  }
+
+  .contact-form form {
+    padding: 0 5%;
+  }
+
+  .contact-form form .input-box input,
+  .contact-form form textarea {
+    font-size: 16px;
+  }
+
+  .footer .social a {
+    margin: 5px;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 20px;
+  }
+
+  .footer ul {
+    font-size: 14px;
+  }
+
+  .footer ul li {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+
+}

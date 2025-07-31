@@ -8,21 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+<script>
+  function toggleMenu() {
+    document.getElementById('navbar').classList.toggle('active');
+  }
+</script>
+
+
 <body>
-    <header class ="header">
-        <a href ="#" class="logo"><span>Han</span>nah</a>
-        <nav class ="navbar">
+ <header class="header">
+  <a href="#" class="logo"><span>Han</span>nah</a>
 
-<a href ="#" class="active">Portfolio</a>
-<a href="#">Services</a>
-<a href="#">Experience</a>
-<a href="#">Project</a>
-<a href="#">Education</a>
+  <!-- Hamburger icon -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
+  <!-- Navigation Links -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="active">Portfolio</a>
+    <a href="#">Services</a>
+    <a href="#">Experience</a>
+    <a href="#">Project</a>
+    <a href="#">Education</a>
+  </nav>
 
-        </nav>
-        <a href ="#" class="contact">Contact me</a>
-    </header>
+  <a href="#" class="contact">Contact me</a>
+</header>
+
 
 
   <section class="home">
