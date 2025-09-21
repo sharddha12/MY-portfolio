@@ -32,7 +32,7 @@ const timeline = [
 
 const About = () => {
   return (
-    <section className="w-full min-h-screen bg-black text-white px-4 py-20" id="about">
+    <section className="w-full min-h-screen bg-[#121224]  text-white px-4 py-20" id="about">
   {/* 🟣 Main Section Heading */}
   <h2 className="text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-600 text-center mb-24">
     About Me

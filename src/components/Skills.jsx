@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillBox = ({ title, skills }) => (
   <div className="bg-[#1e1e2f] rounded-lg p-6 shadow-md w-full max-w-2xl mx-auto">
-    <h3 className="text-xl sm:text-2xl font-semibold text-center mb-5 text-white">{title}</h3>
+    <h3 className="text-1xl sm:text-2xl font-semibold text-center mb-5 text-white">{title}</h3>
     <div className="grid grid-cols-3 sm:grid-cols-4 gap-5 justify-items-center">
       {skills.map((skill, index) => (
         <div
@@ -55,8 +55,8 @@ const Skills = () => {
 
   return (
     <section className="bg-[#121224] text-white py-20 px-6 space-y-14" id="skills">
-      <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10">Skills</h2>
-      <div className="grid gap-10 md:grid-cols-2 max-w-6xl mx-auto">
+      <h2 className="text-5xl sm:text-5xl font-bold text-center mb-12">Skills</h2>
+      <div className="grid gap-12 md:grid-cols-2 max-w-7xl mx-auto">
         <SkillBox title="Frontend" skills={frontend} />
         <SkillBox title="Backend" skills={backend} />
         <SkillBox title="Languages" skills={languages} />

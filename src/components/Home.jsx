@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Code, User } from 'lucide-react';
 import Skills from './Skills';
+import About from './About';
+import Projects from './Project';
 
 function Home() {
   return (
@@ -44,13 +46,18 @@ function Home() {
               </svg>
             </Link>
 
-            <Link
-              to="/projects"
-              className="group inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-orange-400 text-white font-semibold rounded-full shadow-lg hover:bg-orange-500 hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-            >
-              <Code className="w-6 h-6 sm:w-8 sm:h-8 text-white group-hover:text-white transition-colors duration-300" />
-              <span className="text-sm sm:text-base font-semibold">Download CV</span>
-            </Link>
+ <a
+  href="shrddhacv.pdf"
+  download="shrddhacv.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-orange-400 text-white font-semibold rounded-full shadow-lg hover:bg-orange-500 hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+>
+  <Code className="w-6 h-6 sm:w-8 sm:h-8 text-white group-hover:text-white transition-colors duration-300" />
+  <span className="text-sm sm:text-base font-semibold">Download CV</span>
+</a>
+
+
           </div>
         </div>
 
@@ -69,7 +76,9 @@ function Home() {
           </div>
         </div>
       </div>
-
+    <About/>
+<Projects/>
+<Skills/>
       {/* Custom CSS for Animations */}
       <style>
         {`
