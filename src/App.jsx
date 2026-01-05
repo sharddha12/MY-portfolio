@@ -8,6 +8,7 @@ import Skills from "./components/Skills.jsx";
 import Projects from "./components/Project.jsx";
 
 import Contacts from "./components/Contacts.jsx";
+import InternshipExperience from "./components/internship.jsx";
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/Skills" element={<Skills />} />
         <Route path="/Projects" element={<Projects />} />
+        <Route path="/internship" element={<InternshipExperience />} />
       </Routes>
 
 

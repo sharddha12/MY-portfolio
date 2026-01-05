@@ -4,6 +4,7 @@ import { Code, User } from 'lucide-react';
 import Skills from './Skills';
 import About from './About';
 import Projects from './Project';
+import InternshipExperience from './internship';
 
 function Home() {
   return (
@@ -66,17 +67,14 @@ function Home() {
           <div className="relative w-80 h-80 sm:w-[30rem] sm:h-[30rem] lg:w-[34rem] lg:h-[34rem] group">
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-orange-400/30 via-blue-500/30 to-pink-500/30 opacity-50 group-hover:opacity-80 transition-opacity duration-500 z-10"></div>
             <div className="absolute inset-2 rounded-full bg-gray-900/50 backdrop-blur-sm shadow-inner"></div>
-            <img
-              src="src/assets/img.jpg"
-              alt="Shraddha, Frontend Developer"
-              className="relative rounded-full w-full h-full object-cover shadow-3xl z-20 transform group-hover:scale-105 transition-transform duration-500"
-              onError={(e) => (e.target.src = 'https://via.placeholder.com/500x500?text=Shraddha')}
-            />
+           <img src="/images/img.jpg" alt="Shraddha" />
+
             <div className="absolute inset-0 rounded-full border-4 border-dashed border-orange-400/50 animate-spin-slow z-0"></div>
           </div>
         </div>
       </div>
     <About/>
+    <InternshipExperience/>
 <Projects/>
 <Skills/>
       {/* Custom CSS for Animations */}

@@ -94,26 +94,6 @@ const About = () => {
 </div>
 
 
-  {/* Buttons */}
-  <div className="flex gap-4 pt-6 flex-wrap">
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="bg-purple-600 hover:bg-purple-700 text-white text-base font-semibold px-6 py-2.5 rounded-full flex items-center gap-2 transition"
-    >
-      <Download className="w-5 h-5" />
-      Download CV
-    </motion.button>
-
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="bg-emerald-600 hover:bg-emerald-700 text-white text-base font-semibold px-6 py-2.5 rounded-full flex items-center gap-2 transition"
-    >
-      <Mail className="w-5 h-5" />
-      Contact Me
-    </motion.button>
-  </div>
 </motion.div>
 
     {/* 🟣 Right Column - Timeline */}
