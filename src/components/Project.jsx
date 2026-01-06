@@ -25,22 +25,24 @@ const projects = [
   },
 
   {
-    title: "Hillside Website",
-    description:
-      "Modern hotel/resort website with responsive UI and clean layout.",
-    image: hillside,
-    tech: ["React", "Tailwind CSS", "JavaScript"],
-    github: "#",
-  },
+  title: "Hillside Website",
+  description:
+    "Academic journal website with clean layout, article sections, and responsive design.",
+  image: hillside,
+  tech: ["React", "Tailwind CSS", "JavaScript"],
+  github: "#",
+}
+  , 
 
-  {
-    title: "Pihuluxe Website",
-    description:
-      "Luxury hotel website focused on booking and premium UI experience.",
-    image: pihuluxe,
-    tech: ["React", "Tailwind CSS", "JavaScript"],
-    github: "#",
-  },
+ {
+  title: "Pihuluxe Website",
+  description:
+    "Cosmetic e-commerce website with product listings, cart features, and modern UI.",
+  image: pihuluxe,
+  tech: ["React", "Tailwind CSS", "JavaScript"],
+  github: "#",
+}
+
 ];
 
 function Projects() {
