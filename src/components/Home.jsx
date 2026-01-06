@@ -5,6 +5,7 @@ import Skills from './Skills';
 import About from './About';
 import Projects from './Project';
 import InternshipExperience from './internship';
+import img from "../assets/img.jpg";
 
 function Home() {
   return (
@@ -62,12 +63,11 @@ function Home() {
           </div>
         </div>
 
-        {/* Image */}
         <div className="w-full md:w-2/5 flex justify-center md:justify-end animate-slide-in-right">
           <div className="relative w-80 h-80 sm:w-[30rem] sm:h-[30rem] lg:w-[34rem] lg:h-[34rem] group">
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-orange-400/30 via-blue-500/30 to-pink-500/30 opacity-50 group-hover:opacity-80 transition-opacity duration-500 z-10"></div>
-            <div className="absolute inset-2 rounded-full bg-gray-900/50 backdrop-blur-sm shadow-inner"></div>
-           <img src="/images/img.jpg" alt="Shraddha" />
+          
+                <img  className="rounded-full w-80 h-80 sm:w-[30rem] sm:h-[30rem] lg:w-[34rem] lg:h-[34rem] object-cover" src={img} alt="Shraddha" />
 
             <div className="absolute inset-0 rounded-full border-4 border-dashed border-orange-400/50 animate-spin-slow z-0"></div>
           </div>

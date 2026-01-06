@@ -1,84 +1,101 @@
 import React from "react";
 
+import kundule from "../assets/kundule.jpg";
+import library from "../assets/Library.jpg";
+import hillside from "../assets/HillSide.jpg";
+import pihuluxe from "../assets/pihuluxe.jpg";
+
 const projects = [
   {
-    title: "Kunduleschool website",
-    description: "kunduleschool website built using React and Tailwind CSS and backend using Node.js.",
-    image: "/public/kundule.png",
-    
-    githubLink: "https://github.com/yourusername/portfolio",
-    tech: ["React", "Tailwind CSS", "JavaScript"],
+    title: "Kunduleschool Website",
+    description:
+      "School website built using React and Tailwind CSS with backend in Node.js.",
+    image: kundule,
+    tech: ["React", "Tailwind CSS", "Node.js"],
+    github: "https://github.com/sharddha12/MY-portfolio",
   },
+
   {
     title: "Library Management System",
-    description: "CRUD app using Node.js, Express, MongoDB, and EJS.",
-    image: "/public/Librarymanagement.png",
-    
-    githubLink: "https://github.com/yourusername/library-management",
-    tech: ["Node.js", "Express", "MongoDB"],
+    description:
+      "CRUD app using Node.js, Express, MongoDB and EJS templating engine.",
+    image: library,
+    tech: ["Node.js", "Express", "MongoDB", "EJS"],
+    github: "https://github.com/sharddha12/library_management_system",
   },
-  {
-    title: "Movie App",
-    description: "React app to display movies with search and filters.",
-    image: "/public/movie.png",
-    
 
-    githubLink: "https://github.com/yourusername/movie-app",
-    tech: ["React", "CSS", "API"],
+  {
+    title: "Hillside Website",
+    description:
+      "Modern hotel/resort website with responsive UI and clean layout.",
+    image: hillside,
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+    github: "#",
+  },
+
+  {
+    title: "Pihuluxe Website",
+    description:
+      "Luxury hotel website focused on booking and premium UI experience.",
+    image: pihuluxe,
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+    github: "#",
   },
 ];
 
-const Projects = () => {
+function Projects() {
   return (
-    <section id="projects" className="py-18 bg-gray-900 text-white pt-500">
-  
-  <div className="max-w-7xl mx-auto px-9">
-  <h2 className="text-6xl font-bold mb-12 text-center">My Projects</h2>
+    <section className="py-16 px-6 lg:px-14 bg-[#0f1120]" id="projects">
+      <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
+        My Projects
+      </h2>
 
-  <div className="grid gap-9 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-    {projects.map((project, index) => (
-      <div
-        key={index}
-        className="bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:scale-105 transform transition duration-300 min-h-[420px]"
-      >
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-60 object-cover"
-        />
-        <div className="p-7">
-          <h3 className="text-3xl font-semibold mb-3">{project.title}</h3>
-          <p className="text-base text-gray-300 mb-">{project.description}</p>
-          <div className="flex flex-wrap gap-2 mb-4">
-            {project.tech.map((tech, i) => (
-              <span
-                key={i}
-                className="bg-yellow-500 text-black px-3 py-1 rounded text-sm"
-              >
-                {tech}
-              </span>
-            ))}
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((proj, i) => (
+          <div
+            key={i}
+            className="bg-[#16182c] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+          >
+            <img
+              src={proj.image}
+              alt={proj.title}
+              className="w-full h-56 object-cover"
+            />
+
+            <div className="p-6 space-y-3">
+              <h3 className="text-xl font-semibold text-white">
+                {proj.title}
+              </h3>
+
+              <p className="text-gray-300 text-sm">{proj.description}</p>
+
+              <div className="flex flex-wrap gap-2 mt-2">
+                {proj.tech.map((t, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 text-xs rounded-full bg-blue-500/20 text-blue-300"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              {proj.github && (
+                <a
+                  href={proj.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                >
+                  View Code
+                </a>
+              )}
+            </div>
           </div>
-          <div className="flex gap-4">
-            {project.githubLink && (
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-400 hover:underline text-sm"
-              >
-                GitHub
-              </a>
-            )}
-          </div>
-        </div>
+        ))}
       </div>
-    ))}
-  </div>
-</div>
-
-</section>
+    </section>
   );
-};
+}
 
 export default Projects;
